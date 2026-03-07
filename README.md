@@ -1,6 +1,6 @@
 # Sysfix AI — Releases
 
-Pre-built RPM packages for **Sysfix AI**, a professional Linux diagnostics tool with AI-powered fixes.
+Pre-built packages for **Sysfix AI**, a professional Linux diagnostics tool with AI-powered fixes.
 
 ## Latest Release: v1.0.0
 
@@ -8,8 +8,19 @@ First stable release — March 2026.
 
 ### Install
 
+#### Fedora / RHEL / openSUSE (RPM)
 ```bash
 sudo dnf install ./rpms/sysfix-ai-1.0.0-1.fc43.noarch.rpm
+```
+
+#### Debian / Ubuntu / Linux Mint (DEB)
+```bash
+sudo apt install ./rpms/sysfix-ai_1.0.0-1_all.deb
+```
+
+#### Arch / Any distro (pip)
+```bash
+pip install rpms/sysfix_ai-1.0.0-py3-none-any.whl
 ```
 
 ### What's Included
@@ -25,9 +36,8 @@ sudo dnf install ./rpms/sysfix-ai-1.0.0-1.fc43.noarch.rpm
 
 ### Requirements
 
-- Fedora 40+ (or compatible RPM-based distro)
 - Python 3.8+
-- `python3-tkinter` (for GUI)
+- `python3-tkinter` / `python3-tk` (for GUI)
 
 Optional: Install [Ollama](https://ollama.com) for AI features.
 
@@ -42,10 +52,12 @@ sysfix --help   # All commands
 
 ## Files
 
-| File | Description |
-|------|-------------|
-| `rpms/sysfix-ai-1.0.0-1.fc43.noarch.rpm` | Binary RPM (noarch) |
-| `rpms/sysfix-ai-1.0.0-1.fc43.src.rpm` | Source RPM |
+| File | Distro |
+|------|--------|
+| `sysfix-ai-1.0.0-1.fc43.noarch.rpm` | Fedora, RHEL, openSUSE |
+| `sysfix-ai-1.0.0-1.fc43.src.rpm` | Source RPM |
+| `sysfix-ai_1.0.0-1_all.deb` | Debian, Ubuntu, Linux Mint |
+| `sysfix_ai-1.0.0-py3-none-any.whl` | Any Linux (pip) |
 
 ## License
 
